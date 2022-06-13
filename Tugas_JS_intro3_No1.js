@@ -15,7 +15,6 @@ const cekHariKerja = (day) =>{
                 let cek = dataDay.find((item)=>{
                 return item === day.toLowerCase()
                 });  
-                console.log(cek)
                 if (cek){ //variable cek bernilai true
                 resolve (cek);
                 }else{
@@ -28,7 +27,7 @@ const cekHariKerja = (day) =>{
     },3000) 
 })
 }
-const hasil = cekHariKerja(false)     
+const hasil = cekHariKerja(thisDay)     
 hasil
     .then((result)=>{
         console.log(result);
